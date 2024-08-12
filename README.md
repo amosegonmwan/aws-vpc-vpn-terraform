@@ -3,9 +3,19 @@
 ## Description
 This Terraform project automates the setup of a VPN connection within an AWS VPC. It provisions a VPN gateway, customer gateway, and the necessary VPN connections. The project is organized into a modular structure, allowing for easy reuse and customization.
 
-![image](https://github.com/user-attachments/assets/6111c114-6877-4e5a-9471-c24f43615dd2)
-
-
+```plaintext
+.
+├── module-call/
+│   ├── main.tf              # Calls the vpc-vpn module
+│   ├── provider.tf          # Defines the AWS provider
+│   ├── terraform.tfvars     # Specifies the input variables
+│   ├── variables.tf         # Declares input variables
+├── modules/
+│   └── vpc-vpn/
+│       ├── main.tf          # Main Terraform configuration for the VPN setup
+│       ├── variables.tf     # Input variables for the module
+└── README.md                # Project documentation
+```
 ### Module Details
 
 #### `module-call/main.tf`
