@@ -3,6 +3,9 @@
 ## Description
 This Terraform project automates the setup of a VPN connection within an AWS VPC. It provisions a VPN gateway, customer gateway, and the necessary VPN connections. The project is organized into a modular structure, allowing for easy reuse and customization.
 
+![image](https://github.com/user-attachments/assets/6111c114-6877-4e5a-9471-c24f43615dd2)
+
+
 ### Module Details
 
 #### `module-call/main.tf`
